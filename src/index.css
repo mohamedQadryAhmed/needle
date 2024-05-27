@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -11,48 +12,22 @@
   scroll-behavior: smooth;
 }
 
-@layer components {
-  .max-container {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-
-  .input {
-    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
-  }
-
+body {
+  overflow-x: hidden;
 }
 
-@layer utilities {
-  .padding {
-    @apply sm:px-16 px-8 sm:py-24 py-12;
-  }
+header {
+  z-index: 10001 !important;
+}
 
-  .padding-x {
-    @apply sm:px-16 px-8;
-  }
+.primary-btn {
+  @apply px-10 py-2 bg-primary-700 font-semibold text-white rounded-md hover:bg-primary-600 transition-all duration-300 hover:-translate-y-4;
+}
 
-  .padding-y {
-    @apply sm:py-24 py-12;
-  }
+#slider {
+  direction: ltr;
+}
 
-  .padding-l {
-    @apply sm:pl-16 pl-8;
-  }
-
-  .padding-r {
-    @apply sm:pr-16 pr-8;
-  }
-
-  .padding-t {
-    @apply sm:pt-24 pt-12;
-  }
-
-  .padding-b {
-    @apply sm:pb-24 pb-12;
-  }
-
-  .info-text {
-    @apply font-montserrat text-slate-gray text-lg leading-7;
-  }
+.info {
+  direction: rtl;
 }

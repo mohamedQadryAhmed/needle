@@ -1,31 +1,31 @@
 /** @type {import('tailwindcss').Config} */
+const flowbite = require("flowbite-react/tailwind");
+
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", flowbite.content(),],
   theme: {
     extend: {
       fontFamily: {
         cairo: ["Cairo", "sans-serif"],
-       
+        messiri: ["El Messiri", "sans-serif"],
+        
       },
       colors: {
-        primary: "#155177",
-        "steel-blue": "#3F708F",
-        "slate-blue": "#3F708F",
-        "pale-blue": "#DFE7EC",
-        "bgray":"#f4f4f4",
-        "white-400": "rgba(255, 255, 255, 0.80)",
-      },
-      boxShadow: {
-        "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",
-      },
-      backgroundImage: {
-        hero: "url('assets/images/collection-background.svg')",
-        card: "url('assets/images/thumbnail-background.svg')",
-      },
-      screens: {
-        wide: "1440px",
+        "primary-txt": "#1F1F1F",
+        "secondary-txt": "#4C4C4C",
+        "dark-txt": "#FFFFF",
+        "dark-txt-2": "#E6E6E6",
+        "bg-white": "#F4F4F4",
+        "bg-dark": "#2c2c2c",
+        "bg-dark-2": "#061723",
+        "primary-700": "#155177",
+        "primary-600": '#3F708F',
+        "primary-dark": "#DFE7EC",
+        "yellow": "#F8BA10",
+
       },
     },
   },
-  plugins: [],
+  plugins: [flowbite.plugin(),],
 };
