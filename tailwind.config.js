@@ -23,7 +23,11 @@ export default {
         "primary-600": '#3F708F',
         "primary-dark": "#DFE7EC",
         "yellow": "#F8BA10",
-
+        "slate-gray": "#6D6D6D",
+      },
+      backgroundImage: {
+        'hero': "url('assets/images/collection-background.svg')",
+        'card': "url('assets/images/thumbnail-background.svg')",
       },
     },
   },
