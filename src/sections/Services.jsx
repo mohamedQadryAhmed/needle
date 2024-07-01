@@ -1,13 +1,11 @@
 import { TbCircleArrowDown } from "react-icons/tb";
-import big_img1 from "../assets/images/big_img1.png";
-import big_img2 from "../assets/images/big_img2.png";
-import big_img3 from "../assets/images/big_img3.png";
+import { big_imgs } from "../assets/data";
 import ImgCard from "../components/ImgCard";
 import { useState } from "react";
 const Services = () => {
-  const big_imgs = [big_img1, big_img2, big_img3];
+  
 
-  const [bigImg, setBigImg] = useState(big_img1);
+  const [bigImg, setBigImg] = useState(big_imgs[1]);
 
   return (
     <section id="services" className="w-full">
@@ -17,7 +15,7 @@ const Services = () => {
         </h2>
         <span className="h-1 w-28 bg-yellow block absolute right-5 top-12"></span>
       </div>
-      <div className="flex xl:flex-row md:flex-row flex-col justify-center gap-10 border-4 pb-18">
+      <div className="flex xl:flex-row md:flex-row flex-col justify-center gap-10 pb-18">
         <div
           className="relative xl:w-2/5 md:w-1/2 flex flex-col justify-center items-start w-full sm:px-16 px-8 pt-28"
           data-aos="fade-down-left"

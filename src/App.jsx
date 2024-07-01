@@ -24,7 +24,7 @@ export default function App() {
       <section className="">
         <Home />
       </section>
-      <section className="padding ">
+      <section className="padding">
         <Services />
       </section>
       <section className="padding">
